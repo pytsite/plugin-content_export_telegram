@@ -1,0 +1,22 @@
+{
+  "name": "content_export_telegram",
+  "version": "0.1",
+  "description": {
+    "en": "Telegram Content Export",
+    "ru": "Экспорт конетнта в Telegram",
+    "uk": "Експорт контенту до Telegram"
+  },
+  "url": "https://github.com/pytsite/plugin-content_export_telegram",
+  "author": {
+    "name": "Alexander Shepetko",
+    "email": "a@shepetko.com",
+    "url": "https://shepetko.com"
+  },
+  "requires": {
+    "packages": [],
+    "plugins": [
+      "content_export",
+      "telegram"
+    ]
+  }
+}

@@ -1,8 +1,8 @@
-"""PytSite Telegram Plugin Content Export Driver.
+"""PytSite Telegram Plugin Content Export Driver
 """
 from frozendict import frozendict as _frozendict
-from pytsite import lang as _lang, logger as _logger, widget as _widget, router as _router
-from plugins import content_export as _content_export, content as _content, telegram as _telegram
+from pytsite import lang as _lang, logger as _logger
+from plugins import content_export as _content_export, content as _content, telegram as _telegram, widget as _widget
 
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'

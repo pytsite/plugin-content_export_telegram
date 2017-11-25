@@ -9,7 +9,7 @@ __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
 
 # Resources
-_lang.register_package(__name__, alias='content_export_telegram')
+_lang.register_package(__name__)
 
 # Content export driver
 _content_export.register_driver(_driver.Driver())

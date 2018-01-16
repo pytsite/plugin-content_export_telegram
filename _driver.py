@@ -87,7 +87,7 @@ class Driver(_content_export.AbstractDriver):
         try:
             text = '{} {} {}'.format(entity.title, entity.url, ' '.join(tags))
             bot = _telegram.Bot(opts['bot_token'])
-            bot.send_message(opts['chat_id'], text)
+            bot.send_message(text, opts['chat_id'])
         except _telegram.error.Error as e:
             raise _content_export.error.ExportError(str(e))
 

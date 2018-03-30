@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 1.2 (2018-03-30)
+
+Support of `content-export-2.4`.
+
+
 ### 1.1.1 (2018-01-16)
 
 Arguments mess fixed.

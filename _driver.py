@@ -1,12 +1,12 @@
 """PytSite Telegram Plugin Content Export Driver
 """
-from frozendict import frozendict as _frozendict
-from pytsite import lang as _lang, logger as _logger
-from plugins import content_export as _content_export, content as _content, telegram as _telegram, widget as _widget
-
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
+
+from frozendict import frozendict as _frozendict
+from pytsite import lang as _lang, logger as _logger, html as _html
+from plugins import content_export as _content_export, content as _content, telegram as _telegram, widget as _widget
 
 
 class _SettingsWidget(_widget.Abstract):
@@ -22,28 +22,26 @@ class _SettingsWidget(_widget.Abstract):
         self._bot_token = kwargs.get('bot_token', '')
         self._chat_id = kwargs.get('chat_id', '')
 
-    def _get_element(self, **kwargs) -> _widget.Container:
+    def _get_element(self, **kwargs) -> _html.Element:
         """Get HTML element of the widget.
 
         :param **kwargs:
         """
-        wrapper = _widget.Container(uid=self._uid)
+        wrapper = _html.TagLessElement()
 
-        wrapper.append_child(_widget.input.Text(
-            weight=10,
+        wrapper.append(_widget.input.Text(
             uid='{}[bot_token]'.format(self._uid),
             label=_lang.t('content_export_telegram@bot_token'),
             required=True,
             value=self._bot_token,
-        ))
+        ).renderable())
 
-        wrapper.append_child(_widget.input.Text(
-            weight=10,
+        wrapper.append(_widget.input.Text(
             uid='{}[chat_id]'.format(self._uid),
             label=_lang.t('content_export_telegram@chat_id'),
             required=True,
             value=self._chat_id,
-        ))
+        ).renderable())
 
         return wrapper
 

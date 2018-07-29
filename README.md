@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 1.3 (2018-07-29)
+
+Support of `widget-2.4`.
+
+
 ### 1.2 (2018-03-30)
 
 Support of `content-export-2.4`.

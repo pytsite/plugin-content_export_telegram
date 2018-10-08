@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.0 (2018-10-08)
+
+Support of `pytsite-8.x`.
+
+
 ### 1.3 (2018-07-29)
 
 Support of `widget-2.4`.
@@ -21,12 +26,12 @@ Arguments mess fixed.
 
 ### 1.1 (2017-12-13)
 
-Support for PytSite-7.0.
+Support of `pytsite-7.x`.
 
 
 ### 1.0 (2017-11-25)
 
-Support for PytSite-6.0.
+Support of `pytsite-6.x`.
 
 
 ### 0.1 (2017-11-09)

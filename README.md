@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.2 (2019-04-10)
+
+Support of `content-6.0`.
+
+
 ### 2.1 (2018-10-22)
 
 Support of `widget-4.x`.

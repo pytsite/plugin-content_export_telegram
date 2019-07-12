@@ -1,6 +1,6 @@
 {
   "name": "content_export_telegram",
-  "version": "2.3",
+  "version": "2.3.1",
   "description": {
     "en": "Telegram Content Export",
     "ru": "Экспорт конетнта в Telegram",
@@ -15,7 +15,7 @@
   "requires": {
     "pytsite": ">=9.0",
     "packages": {
-      "htmler": "0.1"
+      "htmler": ">=0.1"
     },
     "plugins": {
       "content": "^6.0",

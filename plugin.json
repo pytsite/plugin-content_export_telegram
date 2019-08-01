@@ -1,6 +1,6 @@
 {
   "name": "content_export_telegram",
-  "version": "2.3.1",
+  "version": "2.4",
   "description": {
     "en": "Telegram Content Export",
     "ru": "Экспорт конетнта в Telegram",
@@ -18,7 +18,7 @@
       "htmler": ">=0.1"
     },
     "plugins": {
-      "content": "^6.0",
+      "content": "^7.0",
       "content_export": "^3.0",
       "telegram": "^0.1",
       "widget": "^4.0"

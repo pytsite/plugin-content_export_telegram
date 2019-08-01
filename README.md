@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.4 (2019-08-01)
+
+Support of `content-7.0`.
+
+
 ### 2.3.1 (2019-07-12)
 
 `plugin.json` fixed.
